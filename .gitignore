@@ -13,9 +13,18 @@ storage/*.key
 .env.*.php
 .env.php
 .env
+<<<<<<< HEAD
 Homestead.yaml
 Homestead.json
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
 .idea/
+=======
+composer.lock
+package-lock.json
+
+#Uses VueJS. Run npm run.
+/public/js/app.js
+/public/css/app.css
+>>>>>>> VueJS added
