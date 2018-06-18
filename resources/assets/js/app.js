@@ -12,7 +12,7 @@ import Dashboard from './components/Dashboard.vue';
 Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
 
-axios.defaults.baseURL = 'http://test.loc:8000/api';
+axios.defaults.baseURL = 'http://test.loc/api';
 
 const router = new VueRouter({
     routes: [
