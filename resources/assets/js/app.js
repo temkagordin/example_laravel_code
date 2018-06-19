@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
+import BootstrapVue from 'bootstrap-vue';
 
 import App from './components/App.vue';
 import Home from './components/Home.vue';
@@ -11,6 +12,10 @@ import Dashboard from './components/Dashboard.vue';
 
 Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
+Vue.use(BootstrapVue);
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 axios.defaults.baseURL = 'http://test.loc/api';
 
