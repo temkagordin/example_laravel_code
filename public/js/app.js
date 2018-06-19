@@ -1414,6 +1414,10 @@ function applyToTag (styleElement, obj) {
 "use strict";
 
 /* harmony default export */ __webpack_exports__["a"] = ({
+    meta: {
+        permission: 'any',
+        fail: '/'
+    },
     data: function data() {
         return {
             email: null,
@@ -1611,13 +1615,6 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
         name: 'home',
         component: __WEBPACK_IMPORTED_MODULE_5__components_Home_vue__["a" /* default */]
     }, {
-        path: 'login',
-        name: 'login',
-        component: __WEBPACK_IMPORTED_MODULE_6__components_Login_vue__["a" /* default */],
-        meta: {
-            auth: false
-        }
-    }, {
         path: '/signup',
         name: 'signup',
         component: __WEBPACK_IMPORTED_MODULE_7__components_SignUp_vue__["a" /* default */],
@@ -1625,9 +1622,16 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
             auth: false
         }
     }, {
+        path: '/login',
+        name: 'login',
+        component: __WEBPACK_IMPORTED_MODULE_6__components_Login_vue__["a" /* default */],
+        meta: {
+            auth: false
+        }
+    }, {
         path: '/dashboard',
         name: 'dashboard',
-        components: __WEBPACK_IMPORTED_MODULE_8__components_Dashboard_vue__["a" /* default */],
+        component: __WEBPACK_IMPORTED_MODULE_8__components_Dashboard_vue__["a" /* default */],
         meta: {
             auth: true
         }
@@ -16611,7 +16615,7 @@ exports = module.exports = __webpack_require__(12)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 

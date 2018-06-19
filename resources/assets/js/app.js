@@ -15,35 +15,32 @@ Vue.use(VueAxios, axios);
 axios.defaults.baseURL = 'http://test.loc/api';
 
 const router = new VueRouter({
-    routes: [
-        {
-            path: '/',
-            name: 'home',
-            component: Home
-        },
-        {
-            path: 'login',
-            name: 'login',
-            component: Login,
-            meta: {
-                auth: false
-            }
-        }, {
-            path: '/signup',
-            name: 'signup',
-            component: SignUp,
-            meta: {
-                auth: false
-            }
-        }, {
-            path: '/dashboard',
-            name: 'dashboard',
-            components: Dashboard,
-            meta:{
-                auth:true
-            }
+    routes: [{
+        path: '/',
+        name: 'home',
+        component: Home
+    }, {
+        path: '/signup',
+        name: 'signup',
+        component: SignUp,
+        meta: {
+            auth: false
         }
-    ]
+    }, {
+        path: '/login',
+        name: 'login',
+        component: Login,
+        meta: {
+            auth: false
+        }
+    }, {
+        path: '/dashboard',
+        name: 'dashboard',
+        component: Dashboard,
+        meta: {
+            auth: true
+        }
+    }]
 });
 Vue.router = router;
 

@@ -1,6 +1,9 @@
 <script>
     export default {
-
+        meta: {
+            permission: 'any',
+            fail: '/',
+        },
         data() {
             return {
                 email: null,
@@ -10,7 +13,7 @@
         },
         methods: {
             login() {
-                var app = this
+                let app = this;
                 this.$auth.login({
                     params: {
                         email: app.email,
