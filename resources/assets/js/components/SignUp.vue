@@ -2,9 +2,10 @@
     export default {
         data() {
             return {
-                name: '',
-                email: '',
+                name: this.$route.query.name?this.$route.query.name:'',
+                email: this.$route.query.email?this.$route.query.email:'',
                 password: '',
+                google_id: this.$route.query.google_id?this.$route.query.google_id:'',
                 error: false,
                 errors: {},
                 success: false
@@ -17,7 +18,8 @@
                     params: {
                         name: app.name,
                         email: app.email,
-                        password: app.password
+                        password: app.password,
+                        google_id: app.google_id
                     },
                     success: function () {
                         app.success = true
@@ -28,7 +30,7 @@
                     },
                     redirect: null
                 });
-            }
+            },
         },
         template: require('../views/signup.html'),
         name: "SignUp"

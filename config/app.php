@@ -164,7 +164,12 @@ return [
 	     * JWT Auth
 	     */
 
-	    Tymon\JWTAuth\Providers\LaravelServiceProvider::class
+	    Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+
+	    /*
+		* Socialite
+		*/
+	    Laravel\Socialite\SocialiteServiceProvider::class,
     ],
 
     /*
@@ -216,7 +221,11 @@ return [
 		/*
 		 * JWT auth
 		 */
-		'JWTAuth' => \Tymon\JWTAuth\Facades\JWTAuth::class
+		'JWTAuth' => \Tymon\JWTAuth\Facades\JWTAuth::class,
+	    /*
+	     * Socialite
+	     */
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];

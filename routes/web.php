@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+/*
+ * Google authentication
+ */
+Route::get('auth/google', 'AuthController@redirectToProvider');
+Route::get('auth/google/callback', 'AuthController@handleProviderCallback');

@@ -17,7 +17,7 @@ Vue.use(BootstrapVue);
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-axios.defaults.baseURL = 'http://test.loc/api';
+axios.defaults.baseURL = 'http://test.com/api';
 
 const router = new VueRouter({
     routes: [{
@@ -45,7 +45,8 @@ const router = new VueRouter({
         meta: {
             auth: true
         }
-    }]
+    },
+    ]
 });
 Vue.router = router;
 
